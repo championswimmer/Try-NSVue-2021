@@ -9,7 +9,19 @@
 
 <script lang="ts">
 import Vue from "nativescript-vue";
+import { Component } from "vue-property-decorator";
 
-export default Vue.extend({
-});
+@Component()
+export default class App extends Vue {
+  
+}
+
 </script>
+
+<style lang="scss">
+@import "@/app.scss";
+
+ActionBar {
+  background-color: $complementary;
+}
+</style>

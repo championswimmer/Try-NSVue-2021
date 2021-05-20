@@ -11,14 +11,13 @@
 
 <script lang="ts">
 import Vue from "nativescript-vue";
+import { Component } from "vue-property-decorator";
 
-export default Vue.extend({
-  computed: {
-    message() {
-      return "Blank {N}-Vue app";
-    },
-  },
-});
+@Component()
+
+export default class Home extends Vue{
+  message = "Blank {N}-Vue app"
+};
 </script>
 
 <style scoped lang="scss">
